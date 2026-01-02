@@ -10,7 +10,7 @@ const User = require('./model');
 const getAllUsers = (req, res, next) => {
     User.find()
         .then(response => {
-            res.json({ response })
+            res.json({ response });
         })
         .catch(error => {
             res.json({ message: error })

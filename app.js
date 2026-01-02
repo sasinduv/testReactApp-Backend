@@ -11,8 +11,8 @@ app.use(
 app.use(express.json());
 
 app.get('/users', (req, res) => {
-    controller.getAllUsers(req, res, next => {
-        res.send();
+    controller.getAllUsers((result) => {
+        res.send(result);
     });
 });
 

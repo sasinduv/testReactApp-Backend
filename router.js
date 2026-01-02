@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const controller = require('./controller');
 
-router.get('./users', controller.getAllUsers);
+router.get('/users', controller.getAllUsers);
 router.post('/createuser', controller.addUser);
 router.post('/updateuser', controller.updateUser);
 router.post('/deleteuser', controller.deleteUser);
